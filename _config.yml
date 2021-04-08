@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "신혜린"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/제목없음.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "용인한국외국어대학교부설고등학교 16th"
   location         : "대한민국"
   email            : shinhyelin04@gmail.com
