@@ -71,7 +71,7 @@ int main()
    return 0;
  }
 
-![KakaoTalk_20210815_160844874_02](assets/images/KakaoTalk_20210815_160844874_02.jpg)
+![KakaoTalk_20210815_160844874_02](/assets/images/KakaoTalk_20210815_160844874_02.jpg)
 
 4. 98p
 #include <stdio.h>
@@ -91,10 +91,6 @@ int main()
    return 0;
  }
 
-
-
-
-
 5. 100p
 #include <stdio.h>
 int main()
@@ -113,9 +109,7 @@ int main()
    return 0;
  }
 
-
-
-
+![KakaoTalk_20210815_160844874_03](/assets/images/KakaoTalk_20210815_160844874_03.jpg)
 
 6. 102p
 #include <stdio.h>
