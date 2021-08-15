@@ -1,3 +1,5 @@
+{% include video id="q6fPjQAzll8" provider="youtube" %}
+
 {% capture video_id %}{{ include.id }}{% endcapture %}
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
 {% capture video_danmaku %}{{ include.danmaku | default: 0 }}{% endcapture %}
