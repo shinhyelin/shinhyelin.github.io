@@ -6,6 +6,8 @@ toc_sticky: true
 toc_label: "페이지 주요 목차"
 ---
 
+
+
 1. 72p
 #include <stdio.h>
 int main()
@@ -241,8 +243,8 @@ int main()
 
  if(dic==ic||dpw==pw||dfin==fin)
  {
-printf("문열림~~~~");
- else printf("dlidlidic!");
- } 
- return 0;
- }
+printf("문열림")
+else printf("dlidlidic!");
+}
+return 0;
+}
