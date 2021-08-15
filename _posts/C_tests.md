@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "페이지 주요 목차"
 ---
 
-
+![KakaoTalk_20210815_160844874](/assets/images/KakaoTalk_20210815_160844874.jpeg)
 
 1. 72p
 #include <stdio.h>
