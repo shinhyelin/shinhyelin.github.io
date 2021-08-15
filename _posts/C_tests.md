@@ -55,10 +55,6 @@ int main()
    return 0;
  }
 
-
-
-
-
 3. 96p
 #include <stdio.h>
 int main()
@@ -75,9 +71,7 @@ int main()
    return 0;
  }
 
-
-
-
+![KakaoTalk_20210815_160844874_02](assets/images/KakaoTalk_20210815_160844874_02.jpg)
 
 4. 98p
 #include <stdio.h>
