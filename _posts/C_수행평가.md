@@ -1,0 +1,248 @@
+---
+layout: single
+title: "조건문"
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
+---
+
+1. 72p
+#include <stdio.h>
+int main()
+ {
+   char name[21];
+   int age;
+   char code;
+   double secure;
+   printf("이름을 입력하세요: ");
+   scanf("%s", name);
+   printf("나이를 입력하세요: ");
+   scanf("%d", &age);
+   printf("부서코드를 입력하세요: ");
+   scanf(" %c", &code);
+   printf("보안키를 입력하세요: ");
+   scanf("%lf",&secure);
+   printf("*******************\n");
+   printf("이름: %s\n", name);
+   printf("나이: %d\n", age);
+   printf("부서코드: %c\n", code);
+   printf("보안키: %f\n", secure);
+   printf("*******************\n");
+   return 0;
+ }
+
+
+
+
+
+2. 76p
+#include <stdio.h>
+int main()
+ {
+   double a,b,c;
+   int d,e,f;
+   double score;
+   printf("***과목별 점수 계산 프로그램***\n");
+   printf("중간고사 반영비율/받은 점수를 입력하세요: ");
+   scanf("%lf %d", &a, &d);
+   printf("기말고사 반영비율/받은 점수를 입력하세요: ");
+   scanf("%lf %d", &b, &e);
+   printf("수행평가 반영비율/받은 점수를 입력하세요: ");
+   scanf("%lf %d", &c, &f);
+   score=a*d+b*e+c*f;
+   printf("점수는 %lf 입니다.\n", score);
+   return 0;
+ }
+
+
+
+
+
+3. 96p
+#include <stdio.h>
+int main()
+ {
+   int a,b,c,d;
+   printf("당신의 사주를 봐드립니다.\n");
+   printf("연도 월 일을 차례대로 입력하세요: ");
+   scanf("%d %d %d", &a,&b,&c);
+   d=a-b+c;
+   if(d%10==0)
+   printf("당신의 사주는 대박입니다.\n");
+    else
+   printf("당신의 사주는 그럭저럭입니다.\n");
+   return 0;
+ }
+
+
+
+
+
+4. 98p
+#include <stdio.h>
+int main()
+ {
+   int a,b,c;
+   printf("세 터널의 높이를 차례대로 입력하세요: ");
+   scanf("%d %d %d",&a,&b,&c);
+   if(a<=170)
+   printf("충돌 %d",a);
+   else if(b<=170)
+   printf("충돌 %d",b);
+   else if(c<=170)
+   printf("충돌 %d",c);
+   else
+   printf("무사통과");
+   return 0;
+ }
+
+
+
+
+
+5. 100p
+#include <stdio.h>
+int main()
+ {
+   int a,b;
+   printf("연도와 월을 입력하세요: ");
+   scanf("%d %d",&a,&b);
+   if(b==1||b==3||b==5||b==7||b==8||b==10||b==12)
+   printf("%d년 %d월의 마지막 날은 31일입니다.",a,b);
+   else if(b==4||b==6||b==9||b==11)
+   printf("%d년 %d월의 마지막 날은 30일입니다.",a,b);
+   else if(a%400==0&&b==2)
+   printf("%d년 %d월의 마지막 날은 29일 입니다",a,b);
+   else
+   printf("%d년 %d월의 마지막 날은 28일 입니다.",a,b);
+   return 0;
+ }
+
+
+
+
+
+6. 102p
+#include <stdio.h>
+int main()
+ {
+   int a,b;
+   printf("시간과 분을 입력하세요: ");
+   scanf("%d %d", &a, &b);
+   if(b>=30)
+   printf("입력한 시간의 30분 전 시간은 %d시 %d분 입니다.",a,b-30);
+   else if(a!=0&&b<=30)
+   printf("입력한 시간의 30분 전 시간은 %d시 %d분 입니다.",a-1,60-b);
+   else if(a==0&&b<=30)
+   printf("입력한 시간의 30분 전 시간은 %d시 %d분 입니다.",23,60-b);
+   return 0;
+ }
+
+
+
+
+
+7. 104p-1 : if 다음에 블록으로 묶어주기
+#include <stdio.h>
+int main()
+ {
+   int a,b,c=15000;
+   printf("책의 가격은 15000원입니다.\n");
+   printf("당신이 가진 용돈은 얼마인가요? : ");
+   scanf("%d",&a);
+   if(a>=c)
+  {b=a-c;
+   printf("책을 구입하였습니다. 이제 남은 용돈은 %d입니다.\n",b);}
+   else
+   printf("책을 구입하지 못했습니다.");
+   return 0;
+ }
+
+
+
+
+
+8. 105p-3 : 수 / 미 / if문은 순서대로 조건식을 확인하기 때문에 <<< else if (score>=70) printf("미\n");에서 이미 조건 만족해서 "미" 출력
+#include <stdio.h>
+int main()
+ {
+  int score;
+  printf("과목의 점수를 입력하세요 : ");
+  scanf("%d",&score);
+  if (score>=90) printf("수\n"); 
+  else if (score>=70) printf("미\n");
+  else if (score>=80) printf("우\n");
+  else if (score>=60) printf("양\n");
+  else printf("가\n");
+  return 0;
+ }
+
+
+
+
+
+9. 105p-4
+if (a==1) printf("lst") ; 
+else if(a==2) printf("2nd");
+else if(a==3) printf("3rd");
+else printf("%dth",a); 
+
+switch (a)
+{ 
+case 1 : printf("1st"); break; 
+case 2 : printf("2nd"); break; 
+case 3: printf("3rd"); break; 
+default: printf("%dth",a); 
+}
+
+
+
+
+
+10. 가위바위보
+#include <stdio.h>
+int main()
+ {
+  char a,b;
+  b='r';
+  printf("안 내면 진거 가위 바위 보!: ");
+  scanf("%c",&a);
+  if(a==b) printf("비겼다");
+  else if((b=='r'&& a=='s')|| (b=='s'&&a=='p') || (b=='p'&&a=='r')) printf("졌다");
+  else printf("이겼다");
+ return 0;
+ }
+
+
+
+
+
+11. 디리디리딕발아
+#include <stdio.h>
+int main()
+ {
+  int select;
+  char dic='c',ic;
+  int dpw=24680,pw;
+  double dfin=1.23456789,fin;
+
+  printf("방법을 선택하세요: ");
+  scanf("%d",&select);
+
+  if(select==1)
+  {printf("IC카드 : ");
+  scanf(" %c",&ic);}
+  else if(select==2)
+  {printf("비밀번호 :");
+  scanf(" %d",&pw);}
+  else if(select==3)
+  {printf("지문 : ");
+  scanf(" %lf",&fin);}
+
+ if(dic==ic||dpw==pw||dfin==fin)
+ {
+printf("문열림~~~~");
+ else printf("dlidlidic!");
+ } 
+ return 0;
+ }
