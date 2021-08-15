@@ -127,10 +127,6 @@ int main()
    return 0;
  }
 
-
-
-
-
 7. 104p-1 : if 다음에 블록으로 묶어주기
 #include <stdio.h>
 int main()
@@ -147,9 +143,7 @@ int main()
    return 0;
  }
 
-
-
-
+![KakaoTalk_20210815_160844874_04](/assets/images/KakaoTalk_20210815_160844874_04.jpg)
 
 8. 105p-3 : 수 / 미 / if문은 순서대로 조건식을 확인하기 때문에 <<< else if (score>=70) printf("미\n");에서 이미 조건 만족해서 "미" 출력
 #include <stdio.h>
@@ -166,10 +160,6 @@ int main()
   return 0;
  }
 
-
-
-
-
 9. 105p-4
 if (a==1) printf("lst") ; 
 else if(a==2) printf("2nd");
@@ -184,9 +174,7 @@ case 3: printf("3rd"); break;
 default: printf("%dth",a); 
 }
 
-
-
-
+![KakaoTalk_20210815_160844874_05](/assets/images/KakaoTalk_20210815_160844874_05.jpg)
 
 10. 가위바위보
 #include <stdio.h>
@@ -202,9 +190,7 @@ int main()
  return 0;
  }
 
-
-
-
+![KakaoTalk_20210815_161928147](/assets/images/KakaoTalk_20210815_161928147.jpg)
 
 11. 디리디리딕발아
 #include <stdio.h>
